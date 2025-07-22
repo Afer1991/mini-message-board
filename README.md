@@ -1,3 +1,3 @@
 # Mini Message Board
 
-Basic Mini Message Board App build with express.js
+Basic Mini Message Board App built with express.js
