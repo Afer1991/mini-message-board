@@ -1,10 +1,26 @@
 <html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
   <body>
-    <form method="POST" action="/new">
-      <h1>Add a new message</h1>
-      <input type="text" name="username">
-      <input type="textarea" name="message">
-      <button>Submit</button>
-    </form>
+    <header>
+      <h1>New Message</h1>
+    </header>
+    <section class="form-section">
+      <form class="form" method="POST" action="/new">
+        <input type="text" name="username" placeholder="Name..." required>
+        <textarea name="message" rows="5" placeholder="Enter your message..." required></textarea>
+        <div class="btn-container">
+          <button class="submit-btn">Submit</button>
+          <a href="/">
+            <button type="button" class="cancel-btn">Cancel</button>
+          </a>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
